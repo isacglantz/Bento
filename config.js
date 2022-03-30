@@ -13,7 +13,7 @@ const CONFIG = {
 	// General
 	name: 'Isac',
 	imageBackground: false,
-	openInNewTab: true,
+	openInNewTab: false,
 	twelveHourFormat: false,
 
 	// Greetings
@@ -29,7 +29,7 @@ const CONFIG = {
 	weatherKey: 'cdda363f51ff4b78dd69a1b9db3896a0', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
-	language: 'sv', // More languages in https://openweathermap.org/current#multi
+	language: 'en', // More languages in https://openweathermap.org/current#multi
 
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
 	defaultLatitude: '56.183477',
@@ -46,46 +46,89 @@ const CONFIG = {
 	hourDarkThemeActive: '18:30',
 	hourDarkThemeInactive: '07:00',
 
+	searchProviders: [
+		{
+			description: 'Google',
+			prefix: 'gg:',
+			link: 'https://www.google.com/search?q=',
+		},
+		{
+			description: 'Youtube',
+			prefix: 'yt:',
+			link: 'https://www.youtube.com/results?search_query=',
+		},
+        {
+            description: 'Google - Last 24 hours',
+            prefix: 'gd:',
+            link: 'https://www.google.com/search?as_qdr=d&q=',
+        },
+        {
+            description: 'Google - Last Week',
+            prefix: 'gw:',
+            link: 'https://www.google.com/search?as_qdr=w&q=',
+        },
+        {
+           description: 'Google - Last Month',
+            prefix: 'gm:',
+            link: 'https://www.google.com/search?as_qdr=m&q=',
+        },
+		{
+			description: 'Google - Last Year',
+			prefix: 'gy:',
+			link: 'https://www.google.com/search?as_qdr=y&q=',
+		},
+		{
+			description: 'Google - Strict',
+			prefix: 'gs:',
+			link: 'https://www.google.com/search?as_epq=',
+		},
+        {
+            description: 'DuckDuckGo',
+            prefix: 'dd:',
+            link: 'https://duckduckgo.com/?q=',
+        },
+	],
+
 	// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
 	// ├┴┐│ │ │  │ │ ││││└─┐
 	// └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 
 	firstButtonsContainer: [
-		{
-			id: '1',
-			name: 'Github',
-			icon: 'github',
-			link: 'https://github.com/',
-		},
+        {
+            id: '1',
+            name: 'Drive',
+            icon: 'hard-drive',
+            link: 'https://drive.google.com/',
+        },
 		{
 			id: '2',
 			name: 'Mail',
 			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
+			link: 'https://outlook.com/',
 		},
-		{
-			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
-		},
+        {
+            id: '3',
+            name: 'Youtube',
+            icon: 'youtube',
+            link: 'https://youtube.com/',
+        },
 		{
 			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
+			name: 'Cmore',
+			icon: 'tv-2',
+			link: 'https://cmore.se',
 		},
+        {
+            id: '5',
+            name: 'Github',
+            icon: 'github',
+            link: 'https://github.com/',
+        },
 		{
-			id: '5',
+			id: '6',
 			name: 'Reddit',
 			icon: 'glasses',
 			link: 'https://reddit.com',
-		},
-		{
-			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
 		},
 	],
 
@@ -135,24 +178,24 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'graduation-cap',
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Canvas',
+					link: 'https://bth.instructure.com/login/saml/7',
+				},
+                {
+                    name: 'Ladok',
+                    link: 'https://student.ladok.se',
+                },
+				{
+					name: 'Inspera',
+					link: 'https://bth.inspera.no/',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-				},
-				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-				},
-				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Studentportal',
+					link: 'https://studentportal.bth.se',
 				},
 			],
 		},
