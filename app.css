@@ -26,6 +26,7 @@
 
   /* Light Colors  */
   --accent: #57a0d9; /* Hover color */
+  --accentshadow: rgba(87, 160, 217, 0.1);
   --background: #f5f5f5; /* Background color */
   --cards: #e4e6e6; /* Cards color */
 
@@ -40,6 +41,7 @@
 .darktheme {
   /* Dark Colors  */
   --accent: #57a0d9; /* Hover color */
+  --accentshadow: rgba(87, 160, 217, 0.1);
   --background: #19171a; /* Background color */
   --cards: #201e21; /* Cards color */
 
@@ -117,13 +119,13 @@ body {
 
 .card {
   background-color: var(--cards);
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   border-radius: 5px;
 }
 
 .card:hover {
   transform: translateY(-0.2rem);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 25px -5px var(--accentshadow), 0 8px 10px -6px var(--accentshadow);
 }
 
 .search {
@@ -140,7 +142,7 @@ body {
   border: none;
   padding: 0px 20px;
   font-size: 1.25em;
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .search input:focus {
