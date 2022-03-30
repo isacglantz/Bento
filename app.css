@@ -26,7 +26,7 @@
 
   /* Light Colors  */
   --accent: #57a0d9; /* Hover color */
-  --accentshadow: rgba(87, 160, 217, 0.1);
+  --accentshadow: rgba(87, 160, 217, 0.3);
   --background: #f5f5f5; /* Background color */
   --cards: #e4e6e6; /* Cards color */
 
@@ -41,7 +41,7 @@
 .darktheme {
   /* Dark Colors  */
   --accent: #57a0d9; /* Hover color */
-  --accentshadow: rgba(87, 160, 217, 0.1);
+  --accentshadow: rgba(87, 160, 217, 0.3);
   --background: #19171a; /* Background color */
   --cards: #201e21; /* Cards color */
 
