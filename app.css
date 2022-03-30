@@ -373,19 +373,37 @@ body {
   }
 
   .weatherBlock {
-    display: none;
+    display: grid;
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 4;
+  }
+
+ .date {
+   display: none;
   }
 
   #greetings {
     font-size: var(--fg-secondary);
   }
 
+  .search {
+    grid-row: 4 / span 1;
+  }
+
+  .linksBlock {
+    grid-row: 5 / span 5;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
   .linksBlockRight {
-    display: none;
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 4;
   }
 
   .linksBlockLeft {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 2;
   }
 
   .button {
