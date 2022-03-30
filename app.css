@@ -110,7 +110,7 @@ body {
   height: 85vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   grid-gap: 30px;
   padding: 20px;
 }
@@ -127,7 +127,7 @@ body {
 }
 
 .search {
-  grid-row: 3;
+  grid-row: 5;
   grid-column: 1 / span 4;
   padding: 0px 15px;
 }
@@ -135,10 +135,12 @@ body {
 .search input {
   background-color: var(--cards);
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .timeBlock {
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 4;
   grid-column: 1 / span 2;
   display: flex;
   flex-direction: column;
@@ -148,7 +150,7 @@ body {
 
 .weatherBlock {
   grid-column: 3 / span 2;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,7 +227,7 @@ body {
 }
 
 .linksBlock {
-  grid-row: 4 / span 2;
+  grid-row: 6 / span 4;
   grid-column: 1 / span 4;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
